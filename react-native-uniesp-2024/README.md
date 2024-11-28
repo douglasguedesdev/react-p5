@@ -63,4 +63,17 @@ Se o usuário estiver autenticado, ele será redirecionado para a tela de ediç�
 Caso contrário, será redirecionado para a tela de login.
 Navegação:
 
+presets: ['babel-preset-expo']:
+
+Este preset configura o Babel para trabalhar com o Expo. Ele já inclui as configurações necessárias para que o código funcione em um ambiente Expo sem necessidade de ajustes adicionais.
+plugins: ['module:react-native-dotenv']:
+
+Este plugin permite o uso de variáveis de ambiente no projeto. Ele carrega as variáveis definidas em um arquivo .env e as disponibiliza no código do projeto. Isso é útil para gerenciar chaves de API, URLs e outras configurações sensíveis que não devem estar diretamente no código-fonte.
+Configurações do Plugin react-native-dotenv:
+
+moduleName: '@nv': Define o nome do módulo ao qual as variáveis de ambiente serão atribuídas. Isso permite acessar as variáveis com @nv.VARIABLE_NAME.
+path: '.env': Indica o caminho do arquivo .env onde as variáveis de ambiente estão definidas.
+safe: false: Permite que variáveis não sejam verificadas. Caso você queira forçar a validação das variáveis no .env, defina como true.
+allowUndefined: true: Permite que variáveis não definidas no .env sejam acessadas sem gerar erros.
+
 As telas são exibidas usando o Stack Navigator, permitindo navegação linear entre elas.
