@@ -15,3 +15,7 @@ root/
 ├── babel.config.js          # Configuração do Babel para transpilação do código
 ├── package-lock.json        # Controle de versões exato das dependências instaladas
 ├── package.json             # Dependências e scripts do projeto
+
+
+
+O arquivo app.json é usado para configurar aspectos essenciais da aplicação desenvolvida com Expo. Ele define informações como o nome do aplicativo, ícones, splash screen, e configurações específicas para Android, iOS e Web.
